@@ -61,13 +61,7 @@
             <url>https://mymavenrepo.com/repo/vKI0lnGsr5MqJ</url>
         </repository>
     </repositories>
-     <servers>
-    <server>
-        <id>dev-repo</id>
-        <username>myMavenRepo.write</username>
-        <password>manjeet</password>
-    </server>
-</servers>
+ 
     <distributionManagement>
         <repository>
             <id>myMavenRepo.write</id>
