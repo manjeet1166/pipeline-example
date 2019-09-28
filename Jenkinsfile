@@ -1,34 +1,9 @@
 pipeline {
-    agent any
-     tools { 
-        maven 'Maven 3.5.0' 
-       
-    }
+    agent { docker 'maven:3-alpine' } 
     stages {
-        stage ('Compile Stage') {
-
+        stage('Example Build') {
             steps {
-              
-                    sh 'mvn clean compile'
-             
-            }
-        }
-
-        stage ('Testing Stage') {
-
-            steps {
-               
-                    sh 'mvn test'
-            
-            }
-        }
-
-
-        stage ('Deployment Stage') {
-            steps {
-               
-                    sh 'mvn deploy'
-
+                sh 'mvn -B clean verify'
             }
         }
     }
