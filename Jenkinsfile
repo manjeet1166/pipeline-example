@@ -7,19 +7,19 @@ pipeline {
     stages {
         stage('Compile stage') {
             steps {
-                sh "mvn clean compile" 
+                bat "mvn clean compile" 
         }
     }
 
          stage('testing stage') {
              steps {
-                sh "mvn test"
+                bat "mvn test"
         }
     }
 
           stage('deployment stage') {
               steps {
-                sh "mvn deploy"
+                bat "mvn deploy"
         }
     }
 
