@@ -64,7 +64,7 @@
      <servers>
     <server>
         <id>dev-repo</id>
-        <username>myMavenRepo</username>
+        <username>myMavenRepo.write</username>
         <password>manjeet</password>
     </server>
 </servers>
